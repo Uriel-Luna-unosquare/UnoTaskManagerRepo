@@ -1,0 +1,298 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\uriel.luna\\Repos\\UnoTaskManagerRepo\\UnoTaskManager.API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{760C8D50-7870-4474-B6E7-69396FF72583}|UnoTaskManager.API.csproj|c:\\users\\uriel.luna\\repos\\unotaskmanagerrepo\\unotaskmanager.api\\unotaskmanager.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{760C8D50-7870-4474-B6E7-69396FF72583}|UnoTaskManager.API.csproj|solutionrelative:unotaskmanager.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{760C8D50-7870-4474-B6E7-69396FF72583}|UnoTaskManager.API.csproj|c:\\users\\uriel.luna\\repos\\unotaskmanagerrepo\\unotaskmanager.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{760C8D50-7870-4474-B6E7-69396FF72583}|UnoTaskManager.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{760C8D50-7870-4474-B6E7-69396FF72583}|UnoTaskManager.API.csproj|c:\\users\\uriel.luna\\repos\\unotaskmanagerrepo\\unotaskmanager.api\\controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{760C8D50-7870-4474-B6E7-69396FF72583}|UnoTaskManager.API.csproj|solutionrelative:controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{760C8D50-7870-4474-B6E7-69396FF72583}|UnoTaskManager.API.csproj|c:\\users\\uriel.luna\\repos\\unotaskmanagerrepo\\unotaskmanager.api\\middlewares\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{760C8D50-7870-4474-B6E7-69396FF72583}|UnoTaskManager.API.csproj|solutionrelative:middlewares\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{760C8D50-7870-4474-B6E7-69396FF72583}|UnoTaskManager.API.csproj|c:\\users\\uriel.luna\\repos\\unotaskmanagerrepo\\unotaskmanager.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{760C8D50-7870-4474-B6E7-69396FF72583}|UnoTaskManager.API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8846ACE7-6B9F-440E-BDAC-9FF6000FE9EA}|..\\UnoTaskManager.Application\\UnoTaskManager.Application.csproj|c:\\users\\uriel.luna\\repos\\unotaskmanagerrepo\\unotaskmanager.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E601921B-1926-4BE8-A88D-62119C05F95B}|..\\UnoTaskManager.Infrastructure\\UnoTaskManager.Infrastructure.csproj|c:\\users\\uriel.luna\\repos\\unotaskmanagerrepo\\unotaskmanager.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8846ACE7-6B9F-440E-BDAC-9FF6000FE9EA}|..\\UnoTaskManager.Application\\UnoTaskManager.Application.csproj|c:\\users\\uriel.luna\\repos\\unotaskmanagerrepo\\unotaskmanager.application\\unotaskmanager.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8846ACE7-6B9F-440E-BDAC-9FF6000FE9EA}|..\\UnoTaskManager.Application\\UnoTaskManager.Application.csproj|c:\\users\\uriel.luna\\repos\\unotaskmanagerrepo\\unotaskmanager.application\\services\\taskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8846ACE7-6B9F-440E-BDAC-9FF6000FE9EA}|..\\UnoTaskManager.Application\\UnoTaskManager.Application.csproj|c:\\users\\uriel.luna\\repos\\unotaskmanagerrepo\\unotaskmanager.application\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8846ACE7-6B9F-440E-BDAC-9FF6000FE9EA}|..\\UnoTaskManager.Application\\UnoTaskManager.Application.csproj|c:\\users\\uriel.luna\\repos\\unotaskmanagerrepo\\unotaskmanager.application\\interfaces\\services\\itaskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8846ACE7-6B9F-440E-BDAC-9FF6000FE9EA}|..\\UnoTaskManager.Application\\UnoTaskManager.Application.csproj|c:\\users\\uriel.luna\\repos\\unotaskmanagerrepo\\unotaskmanager.application\\dtos\\updatetaskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8846ACE7-6B9F-440E-BDAC-9FF6000FE9EA}|..\\UnoTaskManager.Application\\UnoTaskManager.Application.csproj|c:\\users\\uriel.luna\\repos\\unotaskmanagerrepo\\unotaskmanager.application\\dtos\\createtaskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8846ACE7-6B9F-440E-BDAC-9FF6000FE9EA}|..\\UnoTaskManager.Application\\UnoTaskManager.Application.csproj|c:\\users\\uriel.luna\\repos\\unotaskmanagerrepo\\unotaskmanager.application\\dtos\\taskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E601921B-1926-4BE8-A88D-62119C05F95B}|..\\UnoTaskManager.Infrastructure\\UnoTaskManager.Infrastructure.csproj|c:\\users\\uriel.luna\\repos\\unotaskmanagerrepo\\unotaskmanager.infrastructure\\persistence\\taskdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E601921B-1926-4BE8-A88D-62119C05F95B}|..\\UnoTaskManager.Infrastructure\\UnoTaskManager.Infrastructure.csproj|c:\\users\\uriel.luna\\repos\\unotaskmanagerrepo\\unotaskmanager.infrastructure\\persistence\\configurations\\taskitemconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E3FE05B-AD93-4D48-86E6-A62BFBF4BC31}|..\\UnoTaskManager.Domain\\UnoTaskManager.Domain.csproj|c:\\users\\uriel.luna\\repos\\unotaskmanagerrepo\\unotaskmanager.domain\\entities\\taskitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFB04449-3804-41DC-8F72-33BFA10F2B74}|..\\UnoTaskManager.Tests\\UnoTaskManager.Tests.csproj|c:\\users\\uriel.luna\\repos\\unotaskmanagerrepo\\unotaskmanager.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UnoTaskManager.API.csproj",
+              "DocumentMoniker": "C:\\Users\\uriel.luna\\Repos\\UnoTaskManagerRepo\\UnoTaskManager.API\\UnoTaskManager.API.csproj",
+              "RelativeDocumentMoniker": "UnoTaskManager.API.csproj",
+              "ToolTip": "C:\\Users\\uriel.luna\\Repos\\UnoTaskManagerRepo\\UnoTaskManager.API\\UnoTaskManager.API.csproj",
+              "RelativeToolTip": "UnoTaskManager.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-22T17:12:45.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\uriel.luna\\Repos\\UnoTaskManagerRepo\\UnoTaskManager.Application\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "..\\UnoTaskManager.Application\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\uriel.luna\\Repos\\UnoTaskManagerRepo\\UnoTaskManager.Application\\DependencyInjection.cs",
+              "RelativeToolTip": "..\\UnoTaskManager.Application\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T17:12:46.113Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UnoTaskManager.Application.csproj",
+              "DocumentMoniker": "C:\\Users\\uriel.luna\\Repos\\UnoTaskManagerRepo\\UnoTaskManager.Application\\UnoTaskManager.Application.csproj",
+              "RelativeDocumentMoniker": "..\\UnoTaskManager.Application\\UnoTaskManager.Application.csproj",
+              "ToolTip": "C:\\Users\\uriel.luna\\Repos\\UnoTaskManagerRepo\\UnoTaskManager.Application\\UnoTaskManager.Application.csproj",
+              "RelativeToolTip": "..\\UnoTaskManager.Application\\UnoTaskManager.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-22T17:12:46.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TaskService.cs",
+              "DocumentMoniker": "C:\\Users\\uriel.luna\\Repos\\UnoTaskManagerRepo\\UnoTaskManager.Application\\Services\\TaskService.cs",
+              "RelativeDocumentMoniker": "..\\UnoTaskManager.Application\\Services\\TaskService.cs",
+              "ToolTip": "C:\\Users\\uriel.luna\\Repos\\UnoTaskManagerRepo\\UnoTaskManager.Application\\Services\\TaskService.cs",
+              "RelativeToolTip": "..\\UnoTaskManager.Application\\Services\\TaskService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T17:12:46.13Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "NotFoundException.cs",
+              "DocumentMoniker": "C:\\Users\\uriel.luna\\Repos\\UnoTaskManagerRepo\\UnoTaskManager.Application\\Exceptions\\NotFoundException.cs",
+              "RelativeDocumentMoniker": "..\\UnoTaskManager.Application\\Exceptions\\NotFoundException.cs",
+              "ToolTip": "C:\\Users\\uriel.luna\\Repos\\UnoTaskManagerRepo\\UnoTaskManager.Application\\Exceptions\\NotFoundException.cs",
+              "RelativeToolTip": "..\\UnoTaskManager.Application\\Exceptions\\NotFoundException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T17:12:46.13Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ITaskService.cs",
+              "DocumentMoniker": "C:\\Users\\uriel.luna\\Repos\\UnoTaskManagerRepo\\UnoTaskManager.Application\\Interfaces\\Services\\ITaskService.cs",
+              "RelativeDocumentMoniker": "..\\UnoTaskManager.Application\\Interfaces\\Services\\ITaskService.cs",
+              "ToolTip": "C:\\Users\\uriel.luna\\Repos\\UnoTaskManagerRepo\\UnoTaskManager.Application\\Interfaces\\Services\\ITaskService.cs",
+              "RelativeToolTip": "..\\UnoTaskManager.Application\\Interfaces\\Services\\ITaskService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T17:12:46.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\uriel.luna\\Repos\\UnoTaskManagerRepo\\UnoTaskManager.API\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\uriel.luna\\Repos\\UnoTaskManagerRepo\\UnoTaskManager.API\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAADwvxIAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T17:12:46.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TasksController.cs",
+              "DocumentMoniker": "C:\\Users\\uriel.luna\\Repos\\UnoTaskManagerRepo\\UnoTaskManager.API\\Controllers\\TasksController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TasksController.cs",
+              "ToolTip": "C:\\Users\\uriel.luna\\Repos\\UnoTaskManagerRepo\\UnoTaskManager.API\\Controllers\\TasksController.cs",
+              "RelativeToolTip": "Controllers\\TasksController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T17:12:46.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ExceptionHandlingMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\uriel.luna\\Repos\\UnoTaskManagerRepo\\UnoTaskManager.API\\Middlewares\\ExceptionHandlingMiddleware.cs",
+              "RelativeDocumentMoniker": "Middlewares\\ExceptionHandlingMiddleware.cs",
+              "ToolTip": "C:\\Users\\uriel.luna\\Repos\\UnoTaskManagerRepo\\UnoTaskManager.API\\Middlewares\\ExceptionHandlingMiddleware.cs",
+              "RelativeToolTip": "Middlewares\\ExceptionHandlingMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T17:12:46.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UpdateTaskDto.cs",
+              "DocumentMoniker": "C:\\Users\\uriel.luna\\Repos\\UnoTaskManagerRepo\\UnoTaskManager.Application\\DTOs\\UpdateTaskDto.cs",
+              "RelativeDocumentMoniker": "..\\UnoTaskManager.Application\\DTOs\\UpdateTaskDto.cs",
+              "ToolTip": "C:\\Users\\uriel.luna\\Repos\\UnoTaskManagerRepo\\UnoTaskManager.Application\\DTOs\\UpdateTaskDto.cs",
+              "RelativeToolTip": "..\\UnoTaskManager.Application\\DTOs\\UpdateTaskDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T17:12:46.158Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\uriel.luna\\Repos\\UnoTaskManagerRepo\\UnoTaskManager.API\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\uriel.luna\\Repos\\UnoTaskManagerRepo\\UnoTaskManager.API\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-22T17:12:46.158Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CreateTaskDto.cs",
+              "DocumentMoniker": "C:\\Users\\uriel.luna\\Repos\\UnoTaskManagerRepo\\UnoTaskManager.Application\\DTOs\\CreateTaskDto.cs",
+              "RelativeDocumentMoniker": "..\\UnoTaskManager.Application\\DTOs\\CreateTaskDto.cs",
+              "ToolTip": "C:\\Users\\uriel.luna\\Repos\\UnoTaskManagerRepo\\UnoTaskManager.Application\\DTOs\\CreateTaskDto.cs",
+              "RelativeToolTip": "..\\UnoTaskManager.Application\\DTOs\\CreateTaskDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T17:12:46.158Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TaskDto.cs",
+              "DocumentMoniker": "C:\\Users\\uriel.luna\\Repos\\UnoTaskManagerRepo\\UnoTaskManager.Application\\DTOs\\TaskDto.cs",
+              "RelativeDocumentMoniker": "..\\UnoTaskManager.Application\\DTOs\\TaskDto.cs",
+              "ToolTip": "C:\\Users\\uriel.luna\\Repos\\UnoTaskManagerRepo\\UnoTaskManager.Application\\DTOs\\TaskDto.cs",
+              "RelativeToolTip": "..\\UnoTaskManager.Application\\DTOs\\TaskDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T17:12:46.158Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\uriel.luna\\Repos\\UnoTaskManagerRepo\\UnoTaskManager.Infrastructure\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "..\\UnoTaskManager.Infrastructure\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\uriel.luna\\Repos\\UnoTaskManagerRepo\\UnoTaskManager.Infrastructure\\DependencyInjection.cs",
+              "RelativeToolTip": "..\\UnoTaskManager.Infrastructure\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T17:12:46.158Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TaskItemConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\uriel.luna\\Repos\\UnoTaskManagerRepo\\UnoTaskManager.Infrastructure\\Persistence\\Configurations\\TaskItemConfiguration.cs",
+              "RelativeDocumentMoniker": "..\\UnoTaskManager.Infrastructure\\Persistence\\Configurations\\TaskItemConfiguration.cs",
+              "ToolTip": "C:\\Users\\uriel.luna\\Repos\\UnoTaskManagerRepo\\UnoTaskManager.Infrastructure\\Persistence\\Configurations\\TaskItemConfiguration.cs",
+              "RelativeToolTip": "..\\UnoTaskManager.Infrastructure\\Persistence\\Configurations\\TaskItemConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T17:12:46.174Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "TaskDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\uriel.luna\\Repos\\UnoTaskManagerRepo\\UnoTaskManager.Infrastructure\\Persistence\\TaskDbContext.cs",
+              "RelativeDocumentMoniker": "..\\UnoTaskManager.Infrastructure\\Persistence\\TaskDbContext.cs",
+              "ToolTip": "C:\\Users\\uriel.luna\\Repos\\UnoTaskManagerRepo\\UnoTaskManager.Infrastructure\\Persistence\\TaskDbContext.cs",
+              "RelativeToolTip": "..\\UnoTaskManager.Infrastructure\\Persistence\\TaskDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T17:12:46.174Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TaskItem.cs",
+              "DocumentMoniker": "C:\\Users\\uriel.luna\\Repos\\UnoTaskManagerRepo\\UnoTaskManager.Domain\\Entities\\TaskItem.cs",
+              "RelativeDocumentMoniker": "..\\UnoTaskManager.Domain\\Entities\\TaskItem.cs",
+              "ToolTip": "C:\\Users\\uriel.luna\\Repos\\UnoTaskManagerRepo\\UnoTaskManager.Domain\\Entities\\TaskItem.cs",
+              "RelativeToolTip": "..\\UnoTaskManager.Domain\\Entities\\TaskItem.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T17:12:46.174Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\uriel.luna\\Repos\\UnoTaskManagerRepo\\UnoTaskManager.Tests\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "..\\UnoTaskManager.Tests\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\uriel.luna\\Repos\\UnoTaskManagerRepo\\UnoTaskManager.Tests\\UnitTest1.cs",
+              "RelativeToolTip": "..\\UnoTaskManager.Tests\\UnitTest1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T17:12:46.174Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

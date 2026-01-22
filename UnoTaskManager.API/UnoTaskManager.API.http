@@ -1,0 +1,6 @@
+@UnoTaskManager.API_HostAddress = http://localhost:5052
+
+GET {{UnoTaskManager.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
