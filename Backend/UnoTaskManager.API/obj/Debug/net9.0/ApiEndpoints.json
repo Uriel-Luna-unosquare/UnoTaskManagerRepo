@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "UnoTaskManager.API.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "UnoTaskManager.API.Controllers.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "UnoTaskManager.API.Controllers.TasksController",
     "Method": "GetAll",
     "RelativePath": "api/Tasks",
@@ -73,22 +89,6 @@
       {
         "Name": "id",
         "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "UnoTaskManager.API.Controllers.AuthController",
-    "Method": "Login",
-    "RelativePath": "auth/login",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "request",
-        "Type": "UnoTaskManager.API.Controllers.LoginRequest",
         "IsRequired": true
       }
     ],

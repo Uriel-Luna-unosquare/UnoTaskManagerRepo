@@ -1,5 +1,5 @@
 import api from "./axios";
-import type { Task } from "../models/Task.ts";
+import type { Task } from "../models/task.ts";
 
 export async function getTasks(): Promise<Task[]> {
   const response = await api.get("/tasks");

@@ -18,7 +18,7 @@ public class TaskServiceTests
         var dto = new CreateTaskDto
         {
             Title = "Test task",
-            Description = "Description",
+            Description = "Test description",
             DueDate = DateTime.UtcNow.AddDays(1)
         };
 
@@ -26,117 +26,161 @@ public class TaskServiceTests
         var result = await service.CreateAsync(dto);
 
         // Assert
-        Assert.NotEqual(Guid.Empty, result.Id);
-        Assert.Equal("Test task", result.Title);
+        Assert.NotNull(result);
+        Assert.Equal(dto.Title, result.Title);
         Assert.False(result.IsCompleted);
     }
 
     [Fact]
     public async Task CreateAsync_Should_Throw_When_Title_Is_Empty()
     {
+        // Arrange
         var context = DbContextFactory.Create();
         var service = new TaskService(context);
 
         var dto = new CreateTaskDto
         {
             Title = "",
-            Description = "Desc",
             DueDate = DateTime.UtcNow.AddDays(1)
         };
 
-        await Assert.ThrowsAsync<ArgumentException>(() =>
+        // Act & Assert
+        await Assert.ThrowsAsync<ValidationException>(() =>
             service.CreateAsync(dto));
     }
 
     [Fact]
-    public async Task CreateAsync_Should_Throw_When_DueDate_Is_In_The_Past()
+    public async Task CreateAsync_Should_Throw_When_DueDate_Is_In_Past()
     {
+        // Arrange
         var context = DbContextFactory.Create();
         var service = new TaskService(context);
 
         var dto = new CreateTaskDto
         {
-            Title = "Invalid task",
-            Description = "Desc",
+            Title = "Invalid date",
             DueDate = DateTime.UtcNow.AddDays(-1)
         };
 
-        await Assert.ThrowsAsync<ArgumentException>(() =>
+        // Act & Assert
+        await Assert.ThrowsAsync<ValidationException>(() =>
             service.CreateAsync(dto));
     }
 
     [Fact]
-    public async Task GetByIdAsync_Should_Return_Task_When_Exists()
+    public async Task GetByIdAsync_Should_Throw_When_Task_Does_Not_Exist()
     {
+        // Arrange
         var context = DbContextFactory.Create();
         var service = new TaskService(context);
 
-        var created = await service.CreateAsync(new CreateTaskDto
-        {
-            Title = "Task",
-            Description = "Desc",
-            DueDate = DateTime.UtcNow.AddDays(1)
-        });
-
-        var result = await service.GetByIdAsync(created.Id);
-
-        Assert.Equal(created.Id, result.Id);
-    }
-
-    [Fact]
-    public async Task GetByIdAsync_Should_Throw_When_Not_Found()
-    {
-        var context = DbContextFactory.Create();
-        var service = new TaskService(context);
-
+        // Act & Assert
         await Assert.ThrowsAsync<NotFoundException>(() =>
             service.GetByIdAsync(Guid.NewGuid()));
     }
 
     [Fact]
-    public async Task UpdateAsync_Should_Update_Task()
+    public async Task DeleteAsync_Should_Remove_Task()
     {
+        // Arrange
+        var context = DbContextFactory.Create();
+        var service = new TaskService(context);
+
+        var task = await service.CreateAsync(new CreateTaskDto
+        {
+            Title = "To delete",
+            DueDate = DateTime.UtcNow.AddDays(1)
+        });
+
+        // Act
+        await service.DeleteAsync(task.Id);
+
+        // Assert
+        Assert.Empty(context.Tasks);
+    }
+
+    [Fact]
+    public async Task UpdateAsync_Should_Update_Task_Data()
+    {
+        // Arrange
         var context = DbContextFactory.Create();
         var service = new TaskService(context);
 
         var created = await service.CreateAsync(new CreateTaskDto
         {
-            Title = "Old title",
-            Description = "Desc",
+            Title = "Original title",
+            Description = "Original description",
             DueDate = DateTime.UtcNow.AddDays(1)
         });
 
-        await service.UpdateAsync(created.Id, new UpdateTaskDto
+        var updateDto = new UpdateTaskDto
         {
-            Title = "New title",
-            Description = "Updated",
-            DueDate = DateTime.UtcNow.AddDays(2),
-            IsCompleted = true
-        });
+            Title = "Updated title",
+            Description = "Updated description",
+            DueDate = DateTime.UtcNow.AddDays(3),
+            IsCompleted = false
+        };
 
+        // Act
+        await service.UpdateAsync(created.Id, updateDto);
+
+        // Assert
         var updated = await service.GetByIdAsync(created.Id);
 
-        Assert.Equal("New title", updated.Title);
+        Assert.Equal(updateDto.Title, updated.Title);
+        Assert.Equal(updateDto.Description, updated.Description);
+        Assert.Equal(updateDto.DueDate, updated.DueDate);
+        Assert.False(updated.IsCompleted);
+    }
+
+    [Fact]
+    public async Task UpdateAsync_Should_Mark_Task_As_Completed_When_IsCompleted_Is_True()
+    {
+        // Arrange
+        var context = DbContextFactory.Create();
+        var service = new TaskService(context);
+
+        var created = await service.CreateAsync(new CreateTaskDto
+        {
+            Title = "Complete me",
+            DueDate = DateTime.UtcNow.AddDays(1)
+        });
+
+        var updateDto = new UpdateTaskDto
+        {
+            Title = created.Title,
+            Description = created.Description,
+            DueDate = created.DueDate,
+            IsCompleted = true
+        };
+
+        // Act
+        await service.UpdateAsync(created.Id, updateDto);
+
+        // Assert
+        var updated = await service.GetByIdAsync(created.Id);
+
         Assert.True(updated.IsCompleted);
     }
 
-
     [Fact]
-    public async Task DeleteAsync_Should_Remove_Task()
+    public async Task UpdateAsync_Should_Throw_NotFoundException_When_Task_Does_Not_Exist()
     {
+        // Arrange
         var context = DbContextFactory.Create();
         var service = new TaskService(context);
 
-        var created = await service.CreateAsync(new CreateTaskDto
+        var updateDto = new UpdateTaskDto
         {
-            Title = "Task",
-            Description = "Desc",
-            DueDate = DateTime.UtcNow.AddDays(1)
-        });
+            Title = "Does not matter",
+            DueDate = DateTime.UtcNow.AddDays(1),
+            IsCompleted = false
+        };
 
-        await service.DeleteAsync(created.Id);
-
+        // Act & Assert
         await Assert.ThrowsAsync<NotFoundException>(() =>
-            service.GetByIdAsync(created.Id));
+            service.UpdateAsync(Guid.NewGuid(), updateDto));
     }
+
+
 }

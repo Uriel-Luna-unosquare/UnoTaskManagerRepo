@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace UnoTaskManager.Application.Exceptions
+﻿namespace UnoTaskManager.Application.Exceptions
 {
-    public class NotFoundException : Exception
+    public class NotFoundException(string message) : Exception(message)
     {
-        public NotFoundException(string message) : base(message) { }
     }
 }

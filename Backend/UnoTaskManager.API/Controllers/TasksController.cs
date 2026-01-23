@@ -26,6 +26,7 @@ public class TasksController(ITaskService taskService) : ControllerBase
         return Ok(task);
     }
 
+    [AllowAnonymous]
     [HttpPost]
     public async Task<IActionResult> Create([FromBody] CreateTaskDto dto)
     {

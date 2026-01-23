@@ -17,6 +17,10 @@ public class ExceptionHandlingMiddleware(
         {
             await _next(context);
         }
+        catch (ValidationException ex)
+        {
+            await HandleExceptionAsync(context, ex.Message, HttpStatusCode.BadRequest);
+        }
         catch (NotFoundException ex)
         {
             await HandleExceptionAsync(context, ex.Message, HttpStatusCode.NotFound);

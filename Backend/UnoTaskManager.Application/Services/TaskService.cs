@@ -18,6 +18,12 @@ namespace UnoTaskManager.Application.Services
 
         public async Task<TaskDto> CreateAsync(CreateTaskDto dto)
         {
+            if (string.IsNullOrWhiteSpace(dto.Title))
+                throw new ValidationException("Title is required");
+
+            if (dto.DueDate < DateTime.UtcNow.Date)
+                throw new ValidationException("Due date cannot be in the past");
+
             var task = new TaskItem(dto.Title, dto.Description, dto.DueDate);
 
             _context.Tasks.Add(task);

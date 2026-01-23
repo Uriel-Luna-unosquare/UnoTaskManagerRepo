@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AuthProvider } from "./auth/AuthContext";
 import { ProtectedRoute } from "./auth/ProtectedRoute";
-import LoginPage from "./pages/LoginPage.tsx";
-import TasksPage from "./pages/TasksPage.tsx";
+import LoginPage from "./pages/LoginPage/LoginPage";
+import TasksPage from "./pages/TasksPage/TasksPage";
 
 function App() {
   return (
