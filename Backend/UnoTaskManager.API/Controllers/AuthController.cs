@@ -17,7 +17,11 @@ public class AuthController(IConfiguration configuration) : ControllerBase
     [HttpPost("login")]
     public IActionResult Login([FromBody] LoginRequest request)
     {
-        // Fake user
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
+        }
+
         if (request.Username != "admin" || request.Password != "password")
             return Unauthorized("Invalid credentials");
 

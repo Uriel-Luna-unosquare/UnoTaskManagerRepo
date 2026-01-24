@@ -1,5 +1,5 @@
-import httpClient from "./httpClient";
-import type { Task } from "../models/Task.ts";
+import httpClient from "../api/httpClient.ts";
+import type { Task } from "../models/task.ts";
 
 export type CreateTaskPayload = {
   title: string;

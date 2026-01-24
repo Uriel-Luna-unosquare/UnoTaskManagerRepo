@@ -1,8 +1,8 @@
-import api from "./axios";
+import httpClient from "./httpClient";
 
 export interface LoginRequest {
-  email: string;
-  password: string;
+  Username: string;
+  Password: string;
 }
 
 export interface LoginResponse {
@@ -10,6 +10,9 @@ export interface LoginResponse {
 }
 
 export async function login(data: LoginRequest): Promise<LoginResponse> {
-  const response = await api.post("/auth/login", data);
-  return response.data;
+  const { data: response } = await httpClient.post<LoginResponse>(
+    "/auth/login",
+    data
+  );
+  return response;
 }

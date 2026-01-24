@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UnoTaskManager.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e76a3ef43378d280c36be0941e944d73e73e7ae3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+267bdaf586ef1f63335383a689a9de3e96769028")]
 [assembly: System.Reflection.AssemblyProductAttribute("UnoTaskManager.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UnoTaskManager.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

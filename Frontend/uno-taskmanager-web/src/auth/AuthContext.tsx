@@ -10,13 +10,16 @@ interface AuthContextType {
 const AuthContext = createContext<AuthContextType>(null!);
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
-  const [token, setToken] = useState<string | null>(
-    localStorage.getItem("token")
-  );
+  const [token, setToken] = useState<string | null>(() => {
+    const saved = localStorage.getItem("token");
+    return saved && saved.length > 20 ? saved : null;
+  });
 
-  async function loginUser(email: string, password: string) {
-    const result = await login({ email, password });
-    console.log(result);
+  async function loginUser(username: string, password: string) {
+    const result = await login({
+      Username: username,
+      Password: password,
+    });
     localStorage.setItem("token", result.token);
     setToken(result.token);
   }

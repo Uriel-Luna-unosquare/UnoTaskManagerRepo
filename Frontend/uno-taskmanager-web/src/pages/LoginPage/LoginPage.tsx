@@ -12,20 +12,20 @@ import {
 } from "./LoginPage.styles";
 
 export default function LoginPage() {
-  const [email, setEmail] = useState("");
+  const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const { loginUser } = useAuth();
   const navigate = useNavigate();
 
   async function handleLogin() {
-    await loginUser(email, password);
+    await loginUser(username, password);
     navigate("/");
   }
 
   return (
     <Box sx={loginContainerStyles}>
-      <Container maxWidth="sm">
-        <Card sx={loginCardStyles}>
+      <Container maxWidth={false} sx={{ width: "100%", display: "flex", justifyContent: "center" }}>
+        <Card sx={{ ...loginCardStyles, maxWidth: "400px", width: "100%" }}>
           <Typography variant="h4" sx={loginTitleStyles}>
             Welcome Back
           </Typography>
@@ -35,11 +35,11 @@ export default function LoginPage() {
 
           <TextField
             fullWidth
-            label="Email"
-            type="email"
+            label="Username"
+            type="text"
             margin="normal"
             variant="outlined"
-            onChange={e => setEmail(e.target.value)}
+            onChange={e => setUsername(e.target.value)}
             sx={textFieldStyles}
           />
           <TextField
