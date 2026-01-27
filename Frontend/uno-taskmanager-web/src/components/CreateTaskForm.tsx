@@ -6,6 +6,9 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
+import { LocalizationProvider, DatePicker } from "@mui/x-date-pickers";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import dayjs from "dayjs";
 import { taskService } from "../services/taskService";
 
 type Props = {
@@ -70,14 +73,21 @@ export default function CreateTaskForm({ onTaskCreated }: Props) {
             onChange={(e) => setDescription(e.target.value)}
           />
 
-          <TextField
-            label="Due Date"
-            type="date"
-            InputLabelProps={{ shrink: true }}
-            value={dueDate}
-            onChange={(e) => setDueDate(e.target.value)}
-            required
-          />
+          <LocalizationProvider dateAdapter={AdapterDayjs}>
+            <DatePicker
+              label="Due Date"
+              value={dueDate ? dayjs(dueDate) : null}
+              onChange={(newValue) => setDueDate(newValue ? newValue.format("YYYY-MM-DD") : "")}
+              minDate={dayjs()}
+              slotProps={{
+                textField: {
+                  required: true,
+                  fullWidth: true,
+                  readOnly: true,
+                },
+              }}
+            />
+          </LocalizationProvider>
 
           {error && (
             <Typography color="error">{error}</Typography>

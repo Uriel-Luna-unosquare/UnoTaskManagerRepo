@@ -27,6 +27,9 @@ import {
   TextField,
   Button,
 } from "@mui/material";
+import { LocalizationProvider, DatePicker } from "@mui/x-date-pickers";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import dayjs from "dayjs";
 
 export default function TasksPage() {
   const [tasks, setTasks] = useState<Task[]>([]);
@@ -139,14 +142,20 @@ export default function TasksPage() {
       fullWidth
     />
 
-    <TextField
-      label="Due Date"
-      type="date"
-      value={editDueDate}
-      onChange={e => setEditDueDate(e.target.value)}
-      InputLabelProps={{ shrink: true }}
-      fullWidth
-    />
+    <LocalizationProvider dateAdapter={AdapterDayjs}>
+      <DatePicker
+        label="Due Date"
+        value={editDueDate ? dayjs(editDueDate) : null}
+        onChange={(newValue) => setEditDueDate(newValue ? newValue.format("YYYY-MM-DD") : "")}
+        minDate={dayjs()}
+        slotProps={{
+          textField: {
+            fullWidth: true,
+            readOnly: true,
+          },
+        }}
+      />
+    </LocalizationProvider>
   </DialogContent>
 
   <DialogActions>
