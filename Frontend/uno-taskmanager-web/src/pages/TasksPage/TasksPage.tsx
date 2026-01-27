@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
-import { Box, Typography, Card, CircularProgress, IconButton } from "@mui/material";
-import { Delete as DeleteIcon, Edit as EditIcon } from "@mui/icons-material";
+import { Box, Typography, Card, CircularProgress, IconButton, Button } from "@mui/material";
+import { Delete as DeleteIcon, Edit as EditIcon, Logout as LogoutIcon } from "@mui/icons-material";
+import { useAuth } from "../../auth/AuthContext";
+import { useNavigate } from "react-router-dom";
 import { taskService } from "../../services/taskService";
 import type { Task } from "../../models/task";
-import CreateTaskForm from "../../components/CreateTaskForm";
+import CreateTaskForm from "../../components/CreateTaskForm/CreateTaskForm";
 import {
   tasksContainerStyles,
   tasksHeaderStyles,
@@ -25,7 +27,6 @@ import {
   DialogContent,
   DialogActions,
   TextField,
-  Button,
 } from "@mui/material";
 import { LocalizationProvider, DatePicker } from "@mui/x-date-pickers";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
@@ -38,6 +39,13 @@ export default function TasksPage() {
   const [editingTask, setEditingTask] = useState<Task | null>(null);
   const [editTitle, setEditTitle] = useState("");
   const [editDueDate, setEditDueDate] = useState("");
+  const { logout } = useAuth();
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    logout();
+    navigate("/login");
+  };
 
   const handleEditClick = (task: Task) => {
     setEditingTask(task);
@@ -84,9 +92,20 @@ export default function TasksPage() {
   return (
     <Box sx={tasksContainerStyles}>
       <Box sx={{ px: 3, width: "100%" }}>
-        <Box sx={tasksHeaderStyles}>
-          <Typography variant="h3" sx={tasksTitleStyles}>My Tasks</Typography>
-          <Typography variant="body1" sx={tasksSubtitleStyles}>Stay organized and track your progress</Typography>
+        <Box sx={{ ...tasksHeaderStyles, display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
+          <Box>
+            <Typography variant="h3" sx={tasksTitleStyles}>My Tasks</Typography>
+            <Typography variant="body1" sx={tasksSubtitleStyles}>Stay organized and track your progress</Typography>
+          </Box>
+          <Button
+            variant="outlined"
+            size="small"
+            endIcon={<LogoutIcon />}
+            onClick={handleLogout}
+            sx={{ color: "#667eea", borderColor: "#667eea", "&:hover": { backgroundColor: "rgba(102, 126, 234, 0.1)" } }}
+          >
+            Logout
+          </Button>
         </Box>
 
         <Card sx={createTaskCardStyles}>
@@ -113,6 +132,11 @@ export default function TasksPage() {
                       <Typography sx={taskTitleStyles(task.isCompleted)}>{task.title}</Typography>
                       {task.isCompleted && <Typography>✅</Typography>}
                     </Box>
+                    {task.description && (
+                      <Typography variant="body2" sx={{ opacity: 0.8 }}>
+                        {task.description}
+                      </Typography>
+                    )}
                     <Typography variant="caption" sx={{ opacity: 0.7 }}>
                       Due: {new Date(task.dueDate).toLocaleDateString()}
                     </Typography>

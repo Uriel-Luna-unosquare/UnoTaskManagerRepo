@@ -9,7 +9,7 @@ import {
 import { LocalizationProvider, DatePicker } from "@mui/x-date-pickers";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import dayjs from "dayjs";
-import { taskService } from "../services/taskService";
+import { taskService } from "../../services/taskService";
 
 type Props = {
   onTaskCreated: () => void;
