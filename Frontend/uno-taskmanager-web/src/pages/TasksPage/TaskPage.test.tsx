@@ -44,7 +44,7 @@ const mockTasks: Task[] = [
   },
 ];
 
-describe.skip("TasksPage", () => {
+describe("TasksPage", () => {
   beforeEach(() => {
     vi.clearAllMocks();
   });

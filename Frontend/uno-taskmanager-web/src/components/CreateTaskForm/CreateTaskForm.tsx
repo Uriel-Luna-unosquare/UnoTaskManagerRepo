@@ -79,12 +79,12 @@ export default function CreateTaskForm({ onTaskCreated }: Props) {
               value={dueDate ? dayjs(dueDate) : null}
               onChange={(newValue) => setDueDate(newValue ? newValue.format("YYYY-MM-DD") : "")}
               minDate={dayjs()}
-              readOnly={true}
               slotProps={{
                 textField: {
                   required: true,
                   fullWidth: true,
                 },
+                
               }}
             />
           </LocalizationProvider>

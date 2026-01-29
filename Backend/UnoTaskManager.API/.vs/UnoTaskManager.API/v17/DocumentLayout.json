@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\uriel.luna\\Repos\\UnoTaskManagerRepo\\Backend\\UnoTaskManager.API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{760C8D50-7870-4474-B6E7-69396FF72583}|UnoTaskManager.API.csproj|c:\\users\\uriel.luna\\repos\\unotaskmanagerrepo\\backend\\unotaskmanager.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{760C8D50-7870-4474-B6E7-69396FF72583}|UnoTaskManager.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8846ACE7-6B9F-440E-BDAC-9FF6000FE9EA}|..\\UnoTaskManager.Application\\UnoTaskManager.Application.csproj|c:\\users\\uriel.luna\\repos\\unotaskmanagerrepo\\backend\\unotaskmanager.application\\services\\taskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -12,10 +16,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{760C8D50-7870-4474-B6E7-69396FF72583}|UnoTaskManager.API.csproj|c:\\users\\uriel.luna\\repos\\unotaskmanagerrepo\\backend\\unotaskmanager.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{760C8D50-7870-4474-B6E7-69396FF72583}|UnoTaskManager.API.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{760C8D50-7870-4474-B6E7-69396FF72583}|UnoTaskManager.API.csproj|c:\\users\\uriel.luna\\repos\\unotaskmanagerrepo\\backend\\unotaskmanager.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{760C8D50-7870-4474-B6E7-69396FF72583}|UnoTaskManager.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8846ACE7-6B9F-440E-BDAC-9FF6000FE9EA}|..\\UnoTaskManager.Application\\UnoTaskManager.Application.csproj|c:\\users\\uriel.luna\\repos\\unotaskmanagerrepo\\backend\\unotaskmanager.application\\dtos\\createtaskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -48,20 +48,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\uriel.luna\\Repos\\UnoTaskManagerRepo\\Backend\\UnoTaskManager.API\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\uriel.luna\\Repos\\UnoTaskManagerRepo\\Backend\\UnoTaskManager.API\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAqwDgAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-23T21:49:50.83Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -101,7 +102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "TaskService.cs",
               "DocumentMoniker": "C:\\Users\\uriel.luna\\Repos\\UnoTaskManagerRepo\\Backend\\UnoTaskManager.Application\\Services\\TaskService.cs",
               "RelativeDocumentMoniker": "..\\UnoTaskManager.Application\\Services\\TaskService.cs",
@@ -114,7 +115,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\uriel.luna\\Repos\\UnoTaskManagerRepo\\Backend\\UnoTaskManager.API\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
@@ -126,7 +127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "TasksController.cs",
               "DocumentMoniker": "C:\\Users\\uriel.luna\\Repos\\UnoTaskManagerRepo\\Backend\\UnoTaskManager.API\\Controllers\\TasksController.cs",
               "RelativeDocumentMoniker": "Controllers\\TasksController.cs",

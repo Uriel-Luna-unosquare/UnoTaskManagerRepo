@@ -38,6 +38,7 @@ export default function TasksPage() {
   const [error, setError] = useState<string | null>(null);
   const [editingTask, setEditingTask] = useState<Task | null>(null);
   const [editTitle, setEditTitle] = useState("");
+  const [description, setDescription] = useState("");
   const [editDueDate, setEditDueDate] = useState("");
   const { logout } = useAuth();
   const navigate = useNavigate();
@@ -50,6 +51,7 @@ export default function TasksPage() {
   const handleEditClick = (task: Task) => {
     setEditingTask(task);
     setEditTitle(task.title);
+    setDescription(task.description || "");
     setEditDueDate(task.dueDate.split("T")[0]);
   };
 
@@ -58,6 +60,7 @@ export default function TasksPage() {
     await taskService.update(editingTask.id, {
       ...editingTask,
       title: editTitle,
+      description: description,
       dueDate: editDueDate,
     });
     setEditingTask(null);
@@ -156,40 +159,35 @@ export default function TasksPage() {
         )}
       </Box>
       <Dialog open={!!editingTask} onClose={() => setEditingTask(null)}>
-  <DialogTitle>Edit Task</DialogTitle>
-
-  <DialogContent sx={{ display: "flex", flexDirection: "column", gap: 2, mt: 1 }}>
-    <TextField
-      label="Title"
-      value={editTitle}
-      onChange={e => setEditTitle(e.target.value)}
-      fullWidth
-    />
-
-    <LocalizationProvider dateAdapter={AdapterDayjs}>
-      <DatePicker
-        label="Due Date"
-        value={editDueDate ? dayjs(editDueDate) : null}
-        onChange={(newValue) => setEditDueDate(newValue ? newValue.format("YYYY-MM-DD") : "")}
-        minDate={dayjs()}
-        slotProps={{
-          textField: {
-            fullWidth: true,
-            readOnly: true,
-          },
-        }}
-      />
-    </LocalizationProvider>
-  </DialogContent>
-
-  <DialogActions>
-    <Button onClick={() => setEditingTask(null)}>Cancel</Button>
-    <Button variant="contained" onClick={handleSaveEdit}>
-      Save
-    </Button>
-  </DialogActions>
-</Dialog>
+        <DialogTitle>Edit Task</DialogTitle>
+        <DialogContent sx={{ display: "flex", flexDirection: "column", gap: 2, mt: 1 }}>
+          <TextField label="Title" value={editTitle} onChange={e => setEditTitle(e.target.value)} fullWidth/>
+          <TextField
+            label="Description"
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
+          />
+            <LocalizationProvider dateAdapter={AdapterDayjs}>
+              <DatePicker
+                label="Due Date"
+                value={editDueDate ? dayjs(editDueDate) : null}
+                onChange={(newValue) => setEditDueDate(newValue ? newValue.format("YYYY-MM-DD") : "")}
+                minDate={dayjs()}
+                slotProps={{
+                  textField: {
+                    fullWidth: true,
+                  },
+                }}
+              />
+            </LocalizationProvider>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={() => setEditingTask(null)}>Cancel</Button>
+          <Button variant="contained" onClick={handleSaveEdit}>
+            Save
+          </Button>
+        </DialogActions>
+      </Dialog>
     </Box>
-    
   );
 }
