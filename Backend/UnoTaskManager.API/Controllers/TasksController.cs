@@ -5,7 +5,6 @@ using UnoTaskManager.Application.Interfaces.Services;
 
 namespace UnoTaskManager.API.Controllers;
 
-[Authorize]
 [ApiController]
 [Route("api/[controller]")]
 public class TasksController(ITaskService taskService) : ControllerBase

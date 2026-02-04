@@ -17,11 +17,10 @@ WORKDIR /src/UnoTaskManager.API
 RUN dotnet publish -c Release -o /app/publish
 
 # ---------- RUNTIME ----------
-FROM mcr.microsoft.com/dotnet/aspnet:8.0
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
 WORKDIR /app
 
 EXPOSE 8080
 
 COPY --from=build /app/publish .
-
 ENTRYPOINT ["dotnet", "UnoTaskManager.API.dll"]
